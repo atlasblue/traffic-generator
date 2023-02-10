@@ -1,6 +1,6 @@
 #client.sh
-declare -a ip=("10.44.55.169" "10.44.55.168")
-declare -a port=("5432")
+declare -a ip=("10.44.55.64" "10.44.55.64")
+declare -a port=("22")
 ## now loop through the above array
 while :
 do
@@ -9,7 +9,7 @@ do
         for j in "${port[@]}"
         do
             echo "$i:$j"
-            curl $i:$j
+            curl --connect-timeout 5 $i:$j
             sleep 1
         done
     done
