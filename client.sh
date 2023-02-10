@@ -1,5 +1,5 @@
 #client.sh
-declare -a ip=("10.44.55.64" "10.44.55.64")
+declare -a ip=("10.44.55.64" "10.44.55.70")
 declare -a port=("22")
 ## now loop through the above array
 while :
